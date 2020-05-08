@@ -21,11 +21,10 @@ app.use('/client', express.static(__dirname + '/client'));
 
 app.use('/.netlify/functionsapi', express.Router());
 
-module.exports.handler = serverLess(app);
 
-// http.listen(process.env.PORT || 8000, () => {
-
-// });
+http.listen(process.env.PORT || 8000, () => {
+    module.exports.handler = serverLess(app);
+});
 
 
 const io = require('socket.io')(http);
