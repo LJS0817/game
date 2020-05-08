@@ -1,0 +1,25 @@
+#connected{
+    position: relative;
+}
+.user-type-0{
+    border: solid rgb(155, 190, 255);
+    background: rgb(155, 190, 255);
+}
+.user-type-1{
+    border: solid rgb(255, 155, 155);
+    background: rgb(255, 155, 155);
+}
+#ctx{
+    border: 1px solid #000000;
+}
+#chat-text{
+    width: 500px;
+    height: 100px;
+    overflow-y: scroll;
+}
+#chat-input{
+    width: 500px;
+}
+#game-container{
+    display: none;
+}

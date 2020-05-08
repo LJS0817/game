@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+    <!-- <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script> -->
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script defer src="/public/client.js"></script>
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+    <div id="sign-container">
+        <form>
+            <input id="sign-username" type="text" placeholder="Username"></br>
+            <input id="sign-password" type="password" placeholder="Password"></br>
+        </form>
+        <button id="sign-signIn">Sign In</button>
+        <button id="sign-signUp">Sign Up</button>
+    </div>
+    <div id="game-container">
+        <canvas id='ctx' width="800" height="599"></canvas>
+        <div id="chat-text"></div>
+        <form id="chat-form">
+            <input type="text" id="chat-input">
+        </form>
+    </div>
+</body>
+</html>
