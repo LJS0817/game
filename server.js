@@ -21,7 +21,7 @@ app.use('/client', express.static(__dirname + '/client'));
 
 app.use('/.netlify/functionsapi', express.Router());
 
-modules.exports.handler = serverLess(app);
+module.exports.handler = serverLess(app);
 
 // http.listen(process.env.PORT || 8000, () => {
 
